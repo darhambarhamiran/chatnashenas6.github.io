@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>چت ناشناس</title>
+    <style>
+        /* استایل‌های CSS */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #chat {
+            width: 80%;
+            margin: auto;
+        }
+        #messages {
+            height: 200px;
+            overflow: auto;
+            border: 1px solid #000;
+            margin-bottom: 10px;
+        }
+        #messageInput {
+            width: 70%;
+        }
+    </style>
+</head>
+<body>
+    <h1>چت ناشناس</h1>
+    <div id="chat">
+        <div id="messages"></div>
+        <input type="text" id="messageInput" placeholder="پیام خود را بنویسید...">
+        <button onclick="sendMessage()">ارسال</button>
+        <button onclick="connectToRandom()">اتصال تصادفی</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parse/2.18.0/parse.min.js"></script>
+    <script>
+        // مقداردهی اولیه Parse با استفاده از Back4App
+        Parse.initialize("4ZQKeZMaAL60CY63kgU8oO5S3emrVGNOuOvomBuC", "LVQBKZcp9TD5Z9kN1XTOPAZB5eNPZMEbgUJGp9RY");
+        Parse.serverURL = 'https://parseapi.back4app.com/';
+
+        // تابع برای ارسال پیام
+        function sendMessage() {
+            var messageContent = document.getElementById('messageInput').value;
+            // ارسال پیام به سرور
+        }
+
+        // تابع برای اتصال تصادفی به کاربر دیگر
+        function connectToRandom() {
+            // کد برای اتصال تصادفی به کاربر دیگر
+        }
+    </script>
+</body>
+</html>
